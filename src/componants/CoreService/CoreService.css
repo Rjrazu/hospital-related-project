@@ -1,0 +1,9 @@
+.core {
+    background-image: url("https://cdn.wallpapersafari.com/46/97/yuqztc.jpg"),
+      linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+    height: 480px;
+    width: 100%;
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

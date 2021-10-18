@@ -1,23 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import Blog from './componants/Blog/Blog';
+import AllServices from './componants/AllServices/AllServices';
+import Banner from './componants/Banner/Banner';
+import Contact from './componants/Contact/Contact';
+import CoreService from './componants/CoreService/CoreService';
+import Doctors from './componants/Doctors/Doctors';
+import Header from './componants/Header/Header';
+import Feedback from './componants/Feedback/Feedback';
+import WelcomeNote from './componants/WelconeNote/WelcomeNote';
+import Footer from './componants/Footer/Footer';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <BrowserRouter>
+        <Header></Header>
+        <Banner></Banner>
+        <WelcomeNote></WelcomeNote>
+        <AllServices></AllServices>
+        <CoreService></CoreService>
+        <Doctors></Doctors>
+        <Feedback></Feedback>
+        <Blog></Blog>
+        <Contact></Contact>
+        <Footer></Footer>
+      </BrowserRouter>
     </div>
   );
 }
