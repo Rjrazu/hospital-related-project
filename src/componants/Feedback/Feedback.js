@@ -3,7 +3,7 @@ import { Accordion, Carousel, Col, Container, Row } from 'react-bootstrap';
 
 const Feedback = () => {
     return (
-        <div>
+        <div className="mt-5 mb-5">
             <Container>
                 <Row>
                     <Col lg={6}>

@@ -3,11 +3,22 @@ import { Container, Nav, Navbar, Button } from 'react-bootstrap';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faMailBulk, } from '@fortawesome/free-solid-svg-icons'
+import { NavLink } from 'react-router-dom';
 
 const phoneIcon = <FontAwesomeIcon icon={faPhone} />
 const emailIcon = <FontAwesomeIcon icon={faMailBulk} />
 
 const Header = () => {
+
+    const styleNavlink = {
+        fontSize: "20px",
+        textDecoration: "none",
+        marginRight: "20px",
+    }
+    const activeStyleNavlink = {
+        fontWeight: "bold",
+        color: "red",
+    }
     return (
         <div>
 
@@ -34,11 +45,26 @@ const Header = () => {
                             style={{ maxHeight: '100px' }}
                             navbarScroll
                         >
-                            <Nav.Link href="#action1">Home</Nav.Link>
-                            <Nav.Link href="#action2">Services</Nav.Link>
-                            <Nav.Link href="#action3" >Doctors</Nav.Link>
-                            <Nav.Link href="#action4" >Avout Us</Nav.Link>
-                            <Nav.Link href="#action5" >Contact</Nav.Link>
+                            <NavLink
+                                style={styleNavlink}
+                                activeStyle={activeStyleNavlink}
+                                to="/home">Home</NavLink>
+                            <NavLink
+                                style={styleNavlink}
+                                activeStyle={activeStyleNavlink}
+                                to="/services">Services</NavLink>
+                            <NavLink
+                                style={styleNavlink}
+                                activeStyle={activeStyleNavlink}
+                                to="/doctors">Doctors</NavLink>
+                            <NavLink
+                                style={styleNavlink}
+                                activeStyle={activeStyleNavlink}
+                                to="/feedback">Feedback</NavLink>
+                            <NavLink
+                                style={styleNavlink}
+                                activeStyle={activeStyleNavlink}
+                                to="/contact">Contact Us</NavLink>
                         </Nav>
                         <Button variant="outline-success">Login</Button>
 

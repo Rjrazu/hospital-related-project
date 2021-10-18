@@ -1,31 +1,47 @@
 import './App.css';
-import Blog from './componants/Blog/Blog';
 import AllServices from './componants/AllServices/AllServices';
-import Banner from './componants/Banner/Banner';
 import Contact from './componants/Contact/Contact';
-import CoreService from './componants/CoreService/CoreService';
 import Doctors from './componants/Doctors/Doctors';
 import Header from './componants/Header/Header';
 import Feedback from './componants/Feedback/Feedback';
-import WelcomeNote from './componants/WelconeNote/WelcomeNote';
 import Footer from './componants/Footer/Footer';
-import { BrowserRouter } from 'react-router-dom';
+import NotFound from './componants/NotFound/NotFound';
+import Home from './componants/Home/Home';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div>
-      <BrowserRouter>
+      <Router>
         <Header></Header>
-        <Banner></Banner>
-        <WelcomeNote></WelcomeNote>
-        <AllServices></AllServices>
-        <CoreService></CoreService>
-        <Doctors></Doctors>
-        <Feedback></Feedback>
-        <Blog></Blog>
-        <Contact></Contact>
+
+        <Switch>
+          <Route exact path="/">
+            <Home></Home>
+
+          </Route>
+          <Route exact path="/home">
+            <Home></Home>
+          </Route>
+          <Route exact path="/services">
+            <AllServices></AllServices>
+          </Route>
+          <Route exact path="/doctors">
+            <Doctors></Doctors>
+          </Route>
+          <Route exact path="/contact">
+            <Contact></Contact>
+          </Route>
+          <Route exact path="/feedback">
+            <Feedback></Feedback>
+          </Route>
+          <Route path="*">
+            <NotFound></NotFound>
+          </Route>
+
+        </Switch>
         <Footer></Footer>
-      </BrowserRouter>
+      </Router>
     </div>
   );
 }
