@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Card, Col, Container, Row } from 'react-bootstrap';
+import { Card, Col, Container, Row } from 'react-bootstrap';
 
 const Doctors = () => {
     return (
@@ -17,7 +17,6 @@ const Doctors = () => {
                             <Card.Body>
                                 <Card.Title>Fatema Mohan</Card.Title>
                                 <p>Medicine Experts</p>
-                                <Button variant="success">Click For Details</Button>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -28,7 +27,6 @@ const Doctors = () => {
                             <Card.Body>
                                 <Card.Title>Firoz Ahmed</Card.Title>
                                 <p>Surgery Experts</p>
-                                <Button variant="success">Click For Details</Button>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -39,7 +37,6 @@ const Doctors = () => {
                             <Card.Body>
                                 <Card.Title>Shima Khan</Card.Title>
                                 <p>Experts</p>
-                                <Button variant="success">Click For Details</Button>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -50,7 +47,6 @@ const Doctors = () => {
                             <Card.Body>
                                 <Card.Title>Nazrul Islam</Card.Title>
                                 <p>Experts</p>
-                                <Button variant="success">Click For Details</Button>
                             </Card.Body>
                         </Card>
                     </Col>

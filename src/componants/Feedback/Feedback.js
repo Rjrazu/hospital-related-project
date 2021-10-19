@@ -14,91 +14,70 @@ const Feedback = () => {
                                 <Carousel.Item interval={1000}>
                                     <img
                                         className="d-block w-100"
-                                        src="https://cdn.wallpapersafari.com/46/97/yuqztc.jpg"
+                                        src="https://i.ibb.co/5vhwwTc/patient-doctor-gauze-mask-dark-red-blue-background-emotion-calm-tranquility-healthcare-respiratory-i.jpg"
                                         alt="First slide"
                                     />
                                     <Carousel.Caption>
-                                        <h3>First slide label</h3>
-                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio, vitae velit quaerat, voluptatum quos cupiditate eveniet dicta fuga et quod quidem eum nemo ipsam, culpa explicabo. Quod quibusdam sunt fugiat.</p>
+                                        <h3 className=" bg-primary rounded-3">Ashraful Alam</h3>
+                                        <h6>Always helpful and always available. The folks at (IC) are my insurance people, for everything…cars, boats, houses and that makes my life easier. Peace of mind would be enough, but their bundled rates beat everyone else I’ve used before too..</h6>
                                     </Carousel.Caption>
                                 </Carousel.Item>
-                                <Carousel.Item interval={500}>
+                                <Carousel.Item interval={1000}>
                                     <img
                                         className="d-block w-100"
-                                        src="https://cdn.wallpapersafari.com/46/97/yuqztc.jpg"
+                                        src="https://i.ibb.co/wdbt85Z/ovarian-cancer-featured-image.jpg"
                                         alt="First slide"
                                     />
                                     <Carousel.Caption>
-                                        <h3>Second slide label</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                        <h3 className=" bg-primary rounded-3">Zakia Hossain</h3>
+                                        <h6>This agency does a fantastic job finding me the right coverage and insurance company at a very competitive price every time my insurance renews. Very happy with them as my agent!!</h6>
                                     </Carousel.Caption>
                                 </Carousel.Item>
-                                <Carousel.Item>
+                                <Carousel.Item interval={1000}>
                                     <img
                                         className="d-block w-100"
-                                        src="https://cdn.wallpapersafari.com/46/97/yuqztc.jpg"
+                                        src="https://i.ibb.co/Wxt3xFY/drugseeking.jpg"
                                         alt="First slide"
                                     />
                                     <Carousel.Caption>
-                                        <h3>Third slide label</h3>
-                                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                        <h3 className=" bg-primary rounded-3">Shuvo Ahmed</h3>
+                                        <h6>This agency does a fantastic job finding me the right coverage and insurance company at a very competitive price every time my insurance renews. Very happy with them as my agent!!</h6>
                                     </Carousel.Caption>
                                 </Carousel.Item>
+
                             </Carousel>
                         </div>
                     </Col>
 
                     <Col lg={6}>
-                        <div className="text-center">
+                        <div className="">
                             <h4 className="text-danger">Feel Free For</h4>
                             <h2>ANY FAQ’S</h2>
                             <Accordion defaultActiveKey="0" flush>
                                 <Accordion.Item eventKey="0">
-                                    <Accordion.Header>Accordion Item #1</Accordion.Header>
+                                    <Accordion.Header>What is the link between cholesterol and heart disease?</Accordion.Header>
                                     <Accordion.Body>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                        est laborum.
+                                        Many years of scientific studies have shown a close relationship between cardiovascular disease and cholesterol levels. Your doctor may request a lipid profile—a test that shows the levels of LDL (bad cholesterol), HDL (good cholesterol), and triglycerides in your blood—to assess your risk for developing heart disease.
                                     </Accordion.Body>
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="1">
-                                    <Accordion.Header>Accordion Item #2</Accordion.Header>
+                                    <Accordion.Header>If my body makes its own cholesterol, why does my diet matter?</Accordion.Header>
                                     <Accordion.Body>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                        est laborum.
+                                        When we measure cholesterol levels in your blood, what we see is a combination of what your body makes and what you eat. Because you cannot control how much cholesterol your body produces, other than with medications, restricting saturated fat in your diet can have a major impact on lowering your cholesterol.
                                     </Accordion.Body>
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="2">
-                                    <Accordion.Header>Accordion Item #2</Accordion.Header>
+                                    <Accordion.Header>Should I focus on lowering my dietary cholesterol or saturated fat?</Accordion.Header>
                                     <Accordion.Body>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                        est laborum.
+                                        Limiting saturated and trans fats in your diet has the biggest impact on lowering your cholesterol. Restricting fatty meats, choosing low-fat or nonfat dairy products, and avoiding butter and margarine play a major role in helping to maintain healthy cholesterol levels.
+
+                                        In addition, a diet high in fiber, particularly soluble fiber, can lower cholesterol levels significantly. Weight loss also can be an important part of your overall strategy to lower your cholesterol, including triglycerides, which should stay low, too.
                                     </Accordion.Body>
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="3">
-                                    <Accordion.Header>Accordion Item #2</Accordion.Header>
+                                    <Accordion.Header>After you have a heart attack, is it too late to benefit from cholesterol-lowering drugs?</Accordion.Header>
                                     <Accordion.Body>
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                                        velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-                                        est laborum.
+                                        No, it’s never too late to benefit from cholesterol-lowering drugs. After you’ve had a heart attack, using cholesterol-lowering drugs such as statins may significantly lower your chances of having another heart attack or stroke. If you have not had a heart attack, but are at increased risk of heart disease or show early evidence of plaque in your arteries, a cholesterol-lowering drug may help prevent a heart attack or stroke.
                                     </Accordion.Body>
                                 </Accordion.Item>
                             </Accordion>
