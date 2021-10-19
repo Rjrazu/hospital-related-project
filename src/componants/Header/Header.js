@@ -1,17 +1,27 @@
 import React from 'react';
+import { useHistory } from 'react-router';
 import { Container, Nav, Navbar, Button } from 'react-bootstrap';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faMailBulk, } from '@fortawesome/free-solid-svg-icons'
 import { NavLink } from 'react-router-dom';
+import useAuth from '../../hooks/useAuth';
 
 const phoneIcon = <FontAwesomeIcon icon={faPhone} />
 const emailIcon = <FontAwesomeIcon icon={faMailBulk} />
 
 const Header = () => {
 
+    const { user, logOut } = useAuth();
+    const history = useHistory();
+
+    const handleLoginButton = () => {
+        history.push('/login')
+    }
+
     const styleNavlink = {
         fontSize: "20px",
+        fontWeight: '500',
         textDecoration: "none",
         marginRight: "20px",
     }
@@ -66,7 +76,14 @@ const Header = () => {
                                 activeStyle={activeStyleNavlink}
                                 to="/contact">Contact Us</NavLink>
                         </Nav>
-                        <Button variant="outline-success">Login</Button>
+                        {user?.uid
+                            ?
+                            <div>
+                                <h6 className="d-inline me-1">{user.displayName}</h6>
+                                <Button onClick={logOut} variant="success">Logout</Button>
+                            </div>
+                            :
+                            <Button onClick={handleLoginButton} variant="success">Login</Button>}
 
                     </Navbar.Collapse>
                 </Container>

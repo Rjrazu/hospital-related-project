@@ -2,15 +2,11 @@ import React from 'react';
 
 const Contact = () => {
     return (
-        <div>
-            <div className="container border">
-                <div className="ApplyForm m-4">
-                    <div className="container">
-                        <div className="bg-light ApplyForm-header m-5">
-                            <h2 className="text-dark  p-2 text-center">Contact Us</h2>
-                        </div>
-                    </div>
-                </div>
+        <div className="container border mt-4 mb-5">
+            <div className="bg-light m-5">
+                <h2 className="text-dark  p-2 text-center mb-3">Contact Us</h2>
+
+
                 <form>
                     <div className="row pt-3 mx-auto">
                         <div className="col-8 form-group mx-auto">
@@ -55,15 +51,14 @@ const Contact = () => {
                         <div className="col-8 pt-3 mx-auto">
                             <input
                                 type="submit"
-                                className="btn btn-info"
+                                className="btn btn-primary"
                                 value="Send Message"
                             ></input>
                         </div>
                     </div>
-                    <br></br>
                 </form>
-            </div>
-            <div>
+
+
             </div>
         </div>
     );
