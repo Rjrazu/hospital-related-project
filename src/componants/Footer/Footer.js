@@ -28,7 +28,7 @@ const
 
                         <Col lg={3}>
                             <h3>We Provides You</h3> <br />
-                            <h6 className="mb-2"><span className="text-danger"><i className="fas fa-angle-double-right"></i></span> Experineced Sergeons Kurigram</h6>
+                            <h6 className="mb-2"><span className="text-danger"><i className="fas fa-angle-double-right"></i></span> Experineced Sergeons</h6>
                             <h6 className="mb-2"> <span className="text-danger"><i className="fas fa-angle-double-right"></i></span> Special Treatments</h6>
                             <h6 className="mb-2"><span className="text-danger"><i className="fas fa-angle-double-right"></i></span> Comfort Environment</h6>
                             <h6 className="mb-2"><span className="text-danger"><i className="fas fa-angle-double-right"></i></span><span className="text-danger"></span> Talented Cardiologist</h6>
