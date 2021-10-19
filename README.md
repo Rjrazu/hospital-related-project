@@ -1,8 +1,9 @@
 # Heart Care 
 
-Project Link [Create React App](https://health-care-e4dbc.web.app/).
+Project Link [Live Firebase Link](https://health-care-e4dbc.web.app/).
 
-## Available Features
+## Available Web Features
+
 
 - You Can Login with Google
 - You can Login By Using Email And Password
@@ -19,7 +20,7 @@ Project Link [Create React App](https://health-care-e4dbc.web.app/).
 
 ## What We Can Provides
 
-- Experineced Sergeons Kurigram
+- Experineced Sergeons
 - Special Treatments
 - Comfort Environment
 - Talented Cardiologist
