@@ -80,7 +80,7 @@ const Header = () => {
                         {user?.uid
                             ?
                             <div>
-                                <h6 className="d-inline me-1"> <span className="text-danger"><i className="far fa-user"></i></span> {user.displayName}</h6>
+                                <h5 className="d-inline me-2"> <span className="text-danger"><i className="far fa-user"></i></span> {user?.displayName}</h5>
                                 <Button onClick={logOut} variant="success">Logout</Button>
                             </div>
                             :

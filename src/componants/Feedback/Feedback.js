@@ -55,27 +55,25 @@ const Feedback = () => {
                             <h2>ANY FAQ’S</h2>
                             <Accordion defaultActiveKey="0" flush>
                                 <Accordion.Item eventKey="0">
-                                    <Accordion.Header>What is the link between cholesterol and heart disease?</Accordion.Header>
+                                    <Accordion.Header> <h6>What is the link between cholesterol and heart disease?</h6> </Accordion.Header>
                                     <Accordion.Body>
                                         Many years of scientific studies have shown a close relationship between cardiovascular disease and cholesterol levels. Your doctor may request a lipid profile—a test that shows the levels of LDL (bad cholesterol), HDL (good cholesterol), and triglycerides in your blood—to assess your risk for developing heart disease.
                                     </Accordion.Body>
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="1">
-                                    <Accordion.Header>If my body makes its own cholesterol, why does my diet matter?</Accordion.Header>
+                                    <Accordion.Header> <h6>If my body makes its own cholesterol, why does my diet matter?</h6> </Accordion.Header>
                                     <Accordion.Body>
                                         When we measure cholesterol levels in your blood, what we see is a combination of what your body makes and what you eat. Because you cannot control how much cholesterol your body produces, other than with medications, restricting saturated fat in your diet can have a major impact on lowering your cholesterol.
                                     </Accordion.Body>
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="2">
-                                    <Accordion.Header>Should I focus on lowering my dietary cholesterol or saturated fat?</Accordion.Header>
+                                    <Accordion.Header> <h6>Should I focus on lowering my dietary cholesterol or saturated fat?</h6> </Accordion.Header>
                                     <Accordion.Body>
                                         Limiting saturated and trans fats in your diet has the biggest impact on lowering your cholesterol. Restricting fatty meats, choosing low-fat or nonfat dairy products, and avoiding butter and margarine play a major role in helping to maintain healthy cholesterol levels.
-
-                                        In addition, a diet high in fiber, particularly soluble fiber, can lower cholesterol levels significantly. Weight loss also can be an important part of your overall strategy to lower your cholesterol, including triglycerides, which should stay low, too.
                                     </Accordion.Body>
                                 </Accordion.Item>
                                 <Accordion.Item eventKey="3">
-                                    <Accordion.Header>After you have a heart attack, is it too late to benefit from cholesterol-lowering drugs?</Accordion.Header>
+                                    <Accordion.Header> <h6> After you have a heart attack, is it too late to benefit from cholesterol-lowering drugs?</h6> </Accordion.Header>
                                     <Accordion.Body>
                                         No, it’s never too late to benefit from cholesterol-lowering drugs. After you’ve had a heart attack, using cholesterol-lowering drugs such as statins may significantly lower your chances of having another heart attack or stroke. If you have not had a heart attack, but are at increased risk of heart disease or show early evidence of plaque in your arteries, a cholesterol-lowering drug may help prevent a heart attack or stroke.
                                     </Accordion.Body>

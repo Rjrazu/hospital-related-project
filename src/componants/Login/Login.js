@@ -58,15 +58,11 @@ const Login = () => {
 
     const handleRegistration = (e) => {
         e.preventDefault()
-        // const filter = /^([a-zA-Z0-9_.-])+@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
         if (password.length < 6) {
             setError('Password Should Be At Least 6 Characters')
             return;
         }
-        // if (!filter.test(password)) {
-        //     setError('Password Should be number and symbol');
-        //     return;
-        // }
+
         // Calling Space
         isLogin ? processLogin(email, password) : createNewUser(email, password)
     }
@@ -83,7 +79,6 @@ const Login = () => {
             .catch((error) => {
                 const errorMessage = error.message;
                 setError(errorMessage)
-                // ..
             });
     }
 

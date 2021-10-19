@@ -2,9 +2,16 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import './Footer.css';
 import icon from '../../images/logo.png'
+import { useHistory } from 'react-router';
 
 const
     Footer = () => {
+
+        const history = useHistory();
+
+        const handleClick = () => {
+            history.push(`/contact`);
+        }
         return (
 
             <Container fluid className="  footer text-white">
@@ -16,7 +23,7 @@ const
                             <p>
                                 The Heart Care Heart Hospital have latest technology machines with experty Heart specialist doctors consectetur adipisicing elit. Distinctio vitae maiores enim ea atque? Natus iure autem cumque, quaerat distinctio pariatur velit illo hic a eos paccusamus.
                             </p> <br />
-                            <button className="btn btn-danger"> Contact Us</button>
+                            <button onClick={handleClick} className="btn btn-danger"> Contact Us</button>
                         </Col>
 
                         <Col lg={3}>

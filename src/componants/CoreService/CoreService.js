@@ -3,9 +3,10 @@ import { Button, Col, Container, Row } from 'react-bootstrap';
 import './CoreService.css'
 
 const CoreService = () => {
+
+
     return (
         <div >
-
             <Container fluid>
                 <Row className="d-flex core align-items-center justify-content-center">
                     <Col lg={5}>

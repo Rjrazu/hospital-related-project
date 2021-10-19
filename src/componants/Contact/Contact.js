@@ -31,7 +31,7 @@ const Contact = () => {
                             <input
                                 type="text"
                                 className="form-control"
-                                placeholder="Subject"
+                                placeholder="Your Problem"
                                 name="subject"
                                 required
                             />
@@ -44,7 +44,7 @@ const Contact = () => {
                                 rows="8"
                                 placeholder="Your message"
                                 name="message"
-                                minlength="25"
+                                minLength="25"
                                 required
                             ></textarea>
                         </div>
