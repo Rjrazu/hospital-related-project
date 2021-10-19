@@ -7,12 +7,12 @@ const AllServices = () => {
     const [services, setServices] = useState([])
 
     useEffect(() => {
-        fetch('./services.json')
+        fetch("./services.json")
             .then(res => res.json())
-            .then(data => setServices(data))
+            .then(data => setServices(data.services))
     }, [])
     return (
-        <div className="mb-5">
+        <div className="mb-5 mt-5">
             <Container>
                 <div className="text-center mb-4">
                     <h4 className="text-danger">Our Departments</h4>
