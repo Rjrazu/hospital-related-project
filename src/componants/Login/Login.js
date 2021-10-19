@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
 import firebaseInitializeApp from '../../Firebase/firebase.init';
 import useAuth from '../../hooks/useAuth';
-import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from "firebase/auth";
 
 
 
 firebaseInitializeApp();
 
 const Login = () => {
+    const [name, setName] = useState('');
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const [error, setError] = useState('')
@@ -35,6 +36,12 @@ const Login = () => {
         setIsLogin(e.target.checked)
     }
 
+    // Handle Email Name
+    const handleNameChange = e => {
+        setName(e.target.value);
+    }
+
+
     // Handle Email Change
 
     const handleEmailChange = (e) => {
@@ -57,8 +64,8 @@ const Login = () => {
             return;
         }
         // if (!filter.test(password)) {
-        //   setError('Password Should be number and symbol');
-        //   return;
+        //     setError('Password Should be number and symbol');
+        //     return;
         // }
         // Calling Space
         isLogin ? processLogin(email, password) : createNewUser(email, password)
@@ -69,9 +76,9 @@ const Login = () => {
             .then((userCredential) => {
                 // Signed in 
                 const user = userCredential.user;
-                // ...
                 console.log(user)
                 setError('')
+                setUserName();
             })
             .catch((error) => {
                 const errorMessage = error.message;
@@ -93,6 +100,10 @@ const Login = () => {
                 setError(errorMessage)
             });
     }
+    const setUserName = () => {
+        updateProfile(auth.currentUser, { displayName: name })
+            .then(result => { })
+    }
 
     return (
         <div className="container border mt-4 mb-5">
@@ -105,7 +116,7 @@ const Login = () => {
 
                         {isLogin ? <p></p> : <div className="mb-3">
                             <label htmlFor="exampleInputName" className="form-label">Your Full Name</label>
-                            <input onBlur={handleEmailChange} type="text" className="form-control" id="exampleInputName" aria-describedby="textHelp" required />
+                            <input onBlur={handleNameChange} type="text" className="form-control" id="exampleInputName" aria-describedby="textHelp" required />
                         </div>}
                         <div className="mb-3">
                             <label htmlFor="exampleInputEmail1" className="form-label">Email address</label>

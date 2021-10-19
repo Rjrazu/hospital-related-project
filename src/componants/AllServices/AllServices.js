@@ -14,7 +14,7 @@ const AllServices = () => {
     return (
         <div className="mb-5">
             <Container>
-                <div className="text-center">
+                <div className="text-center mb-4">
                     <h4 className="text-danger">Our Departments</h4>
                     <h2>DEPARTMENTAL SERVICES</h2>
                 </div>

@@ -1,11 +1,11 @@
 import React from 'react';
 import { useHistory } from 'react-router';
 import { Container, Nav, Navbar, Button } from 'react-bootstrap';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhone, faMailBulk, } from '@fortawesome/free-solid-svg-icons'
 import { NavLink } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
+import icon from '../../images/logo.png'
 
 const phoneIcon = <FontAwesomeIcon icon={faPhone} />
 const emailIcon = <FontAwesomeIcon icon={faMailBulk} />
@@ -28,6 +28,7 @@ const Header = () => {
     const activeStyleNavlink = {
         fontWeight: "bold",
         color: "red",
+        textDecoration: "underline"
     }
     return (
         <div>
@@ -47,7 +48,7 @@ const Header = () => {
 
             <Navbar bg="light" expand="lg">
                 <Container className="p-3">
-                    <Navbar.Brand href="#">RGH</Navbar.Brand>
+                    <Navbar.Brand href="#"><img src={icon} alt="" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav

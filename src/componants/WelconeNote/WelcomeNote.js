@@ -4,7 +4,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 const WelcomeNote = () => {
     return (
         <div>
-            <Container className="mt-5">
+            <Container className="mt-5 shadow mb-5 p-1">
                 <Row>
                     <Col lg={7}>
                         <h4 className="text-danger">Welcome To Your</h4>
@@ -14,11 +14,11 @@ const WelcomeNote = () => {
                             <br /><br />
                             Sapiente accusamus repudiandae architecto corporis aspernatur. Eligendi, accusamus quas mollitia. Natus iure autem cumque, quaerat distinctio pariatur velit illo hic a eos accusamus deleniti totam repellendus reiciendis, nobis vero dolorem nesciunt officia facere perspiciatis fugiat.
                         </p> <br />
-                        <h4 className="text-warning">Dr. Raju Ahmed</h4>
-                        <h3>MS Heart Care Hospital</h3>
+                        <h5 className="text-danger">Dr. Raju Ahmed</h5>
+                        <h4>MS Heart Care Hospital</h4>
                     </Col>
                     <Col lg={5}>
-                        <img className="img-fluid w-100" src="https://www.dashospital.com/myimages/services/cardiology-1.jpg" alt="" />
+                        <img className="img-fluid w-100 rounded-3" src="https://www.dashospital.com/myimages/services/cardiology-1.jpg" alt="" />
                     </Col>
                 </Row>
             </Container>

@@ -17,10 +17,10 @@ const Banner = () => {
                 </Col>
                 <Col lg={6} className="shadow rounded-3">
                     <h1 className="title">
-                        Rowmari Medical College <br /> And Hospital!
+                        Heart Care <br /> Hospital!
                     </h1>
                     <p className="text-white mt-3">
-                        Education is the passport to the future, <br /> for tomorrow belongs to those who prepare for it today.
+                        The Heart Care Heart Hospital have latest technology machines with experty Heart specialist doctors consectetur adipisicing elit.
                     </p>
                     <button onClick={handleClick} className="mt-3 contact-btn">Emergency Contact</button>
                 </Col>
