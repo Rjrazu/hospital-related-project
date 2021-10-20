@@ -38,7 +38,7 @@ const Header = () => {
             <Navbar bg="dark" expand="lg">
                 <Container className="p-0">
                     <Navbar.Brand className="text-white me-auto" href="#"><span className="text-danger">{phoneIcon}</span> <span className="text-success"> Hot-Line :</span> +880 1303-394250</Navbar.Brand>
-                    <Navbar.Brand className="text-white ms-auto" href="#"><span className="text-danger">{emailIcon}</span> <span className="text-success"> Email :</span> Rowmarigeneralhospital121@gmail.com</Navbar.Brand>
+                    <Navbar.Brand className="text-white ms-auto" href="#"><span className="text-danger">{emailIcon}</span> <span className="text-success"> Email :</span> HeartCare121@gmail.com</Navbar.Brand>
                 </Container>
             </Navbar>
 

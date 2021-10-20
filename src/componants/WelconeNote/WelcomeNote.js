@@ -3,8 +3,8 @@ import { Col, Container, Row } from 'react-bootstrap';
 
 const WelcomeNote = () => {
     return (
-        <div>
-            <Container className="mt-5 shadow mb-5 p-1">
+        <div className="mt-5 shadow mb-5 p-1">
+            <Container >
                 <Row>
                     <Col lg={7}>
                         <h4 className="text-danger">Welcome To Your</h4>

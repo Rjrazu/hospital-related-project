@@ -19,7 +19,7 @@ const AllServices = () => {
                     <h2>DEPARTMENTAL SERVICES</h2>
                 </div>
 
-                <Row xs={2} md={4} className="g-4">
+                <Row xs={1} md={4} className="g-4">
 
                     {
                         services.map(service =>

@@ -15,7 +15,7 @@ import Service from './componants/Service/Service';
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <AuthProvider>
         <Router>
           <Header></Header>

@@ -13,9 +13,9 @@ const Banner = () => {
     return (
         <Container fluid >
             <Row className="d-flex banner align-items-center justify-content-center">
-                <Col lg={6}>
+                <Col sm={12} md={6} lg={6}>
                 </Col>
-                <Col lg={6} className="shadow rounded-3">
+                <Col sm={12} md={6} lg={6} className="shadow rounded-3">
                     <h1 className="title">
                         Heart Care <br /> Hospital!
                     </h1>

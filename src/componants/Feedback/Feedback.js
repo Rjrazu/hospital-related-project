@@ -6,8 +6,8 @@ const Feedback = () => {
         <div className="mt-5 mb-5">
             <Container>
                 <Row>
-                    <Col lg={6}>
-                        <div className="text-center">
+                    <Col sm={12} lg={6}>
+                        <div className="text-center mb-5">
                             <h4 className="text-danger">Read What Says Our</h4>
                             <h2>HAPPY PATIENTS</h2>
                             <Carousel>
@@ -49,10 +49,11 @@ const Feedback = () => {
                         </div>
                     </Col>
 
-                    <Col lg={6}>
+                    <Col sm={12} lg={6}>
                         <div className="">
-                            <h4 className="text-danger">Feel Free For</h4>
-                            <h2>ANY FAQ’S</h2>
+                            <div className="text-center"> <h4 className="text-danger">Feel Free For</h4>
+                                <h2>ANY FAQ’S</h2></div>
+
                             <Accordion defaultActiveKey="0" flush>
                                 <Accordion.Item eventKey="0">
                                     <Accordion.Header> <h6>What is the link between cholesterol and heart disease?</h6> </Accordion.Header>

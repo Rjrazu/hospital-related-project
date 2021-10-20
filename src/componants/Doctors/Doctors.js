@@ -9,7 +9,7 @@ const Doctors = () => {
                     <h4 className="text-danger">Our Team</h4>
                     <h2>OUR EXPERTS</h2>
                 </div>
-                <Row xs={2} md={4} className="g-4">
+                <Row xs={2} sm={2} md={4} className="g-4">
                     <Col>
                         <Card className="p-3 shadow">
 

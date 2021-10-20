@@ -9,11 +9,11 @@ const CoreService = () => {
         <div >
             <Container fluid>
                 <Row className="d-flex core align-items-center justify-content-center">
-                    <Col lg={5}>
+                    <Col sm={12} lg={5} >
                         <Row >
                             <Col lg={6}>
                             </Col>
-                            <Col lg={6}>
+                            <Col lg={6} className="mt-sm-3">
                                 <Button variant="secondary mb-1"><span className="text-danger"><i className="fas fa-angle-double-right"></i></span> Experineced Sergeons</Button> <br />
                                 <Button variant="secondary mb-1"><span className="text-danger"><i className="fas fa-angle-double-right"></i></span>Special Treatments</Button> <br />
                                 <Button variant="secondary mb-1"><span className="text-danger"><i className="fas fa-angle-double-right"></i></span>Comfort Environment</Button> <br />
@@ -23,7 +23,7 @@ const CoreService = () => {
                             </Col>
                         </Row>
                     </Col>
-                    <Col lg={7} className="text-white">
+                    <Col sm={12} lg={7} className="text-white ">
                         <h3>Experienced Surgeons</h3>
                         <p><span className="text-white graduation"><i className="fas fa-graduation-cap"></i></span> Ut finibus sem in erat pretium, ultrices semper lorem aliquet. Nulla ultricies sagittis tellus at elementum. Cras consectetur congue diam nec imperdiet. Phasellus accumsan faucibus lectus.</p> <br />
                         <h6>
